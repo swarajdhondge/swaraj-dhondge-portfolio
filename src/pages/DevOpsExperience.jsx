@@ -1,5 +1,5 @@
-
 import React, { useState } from 'react';
+import { ChevronDown, ChevronUp } from 'lucide-react';
 
 const experience = [
   {
@@ -32,19 +32,23 @@ export default function DevOpsExperience() {
   const [active, setActive] = useState(null);
 
   return (
-    <section className="p-6 bg-black text-white">
-      <h2 className="text-3xl font-bold text-center mb-6">DevOps Experience</h2>
-      <div className="max-w-3xl mx-auto space-y-4">
+    <section className="p-6 bg-gradient-to-br from-black via-gray-900 to-blue-900 text-white">
+      <h2 className="text-3xl font-bold text-center mb-8">DevOps Experience</h2>
+      <div className="max-w-4xl mx-auto space-y-4">
         {experience.map((item, idx) => (
-          <div key={idx} className="border border-gray-700 rounded-lg">
+          <div
+            key={idx}
+            className="rounded-xl border border-gray-700 bg-gray-800/80 backdrop-blur-md overflow-hidden shadow-lg hover:shadow-xl transition"
+          >
             <button
-              className="w-full text-left px-4 py-3 bg-gray-800 hover:bg-gray-700 transition font-semibold"
+              className="w-full flex items-center justify-between px-6 py-4 font-semibold text-left text-white hover:bg-gray-700/80 transition"
               onClick={() => setActive(active === idx ? null : idx)}
             >
-              {item.title}
+              <span>{item.title}</span>
+              {active === idx ? <ChevronUp size={20} /> : <ChevronDown size={20} />}
             </button>
             {active === idx && (
-              <ul className="px-6 py-4 list-disc text-sm text-gray-300 space-y-1">
+              <ul className="px-6 pb-6 list-disc text-sm text-gray-300 space-y-2">
                 {item.points.map((point, i) => (
                   <li key={i}>{point}</li>
                 ))}

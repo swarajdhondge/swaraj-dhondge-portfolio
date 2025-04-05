@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const projects = [
@@ -29,13 +28,16 @@ const projects = [
 
 export default function DevOpsProjects() {
   return (
-    <section className="p-6 bg-gradient-to-br from-gray-900 to-black text-white">
-      <h2 className="text-3xl font-bold text-center mb-6">DevOps Projects</h2>
+    <section className="p-6 bg-gradient-to-br from-black via-gray-900 to-blue-900 text-white">
+      <h2 className="text-3xl font-bold text-center mb-8">DevOps Projects</h2>
       <div className="grid gap-6 md:grid-cols-2">
         {projects.map((proj, i) => (
-          <div key={i} className="bg-gray-800 p-5 rounded-lg shadow hover:shadow-lg transition">
-            <h3 className="text-xl font-semibold mb-2">{proj.title}</h3>
-            <ul className="list-disc pl-5 space-y-1 text-sm text-gray-300">
+          <div
+            key={i}
+            className="bg-gray-800 p-6 rounded-2xl shadow-md hover:shadow-lg transition-all border border-gray-700"
+          >
+            <h3 className="text-lg font-semibold mb-3 text-blue-300">{proj.title}</h3>
+            <ul className="list-disc pl-5 space-y-2 text-sm text-gray-300">
               {proj.points.map((pt, j) => (
                 <li key={j}>{pt}</li>
               ))}

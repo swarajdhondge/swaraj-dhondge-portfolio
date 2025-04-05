@@ -5,9 +5,11 @@ import Skills from './pages/Skills';
 import Projects from './pages/Projects';
 import DevOpsProjects from './pages/DevOpsProjects';
 import DevOpsExperience from './pages/DevOpsExperience';
+import ContactMe from './pages/ContactMe';
 import Footer from './components/Footer';
 import 'aos/dist/aos.css';
 import AOS from 'aos';
+import { Analytics } from "@vercel/analytics/react"
 
 function App() {
   const [darkMode, setDarkMode] = useState(true);
@@ -36,11 +38,14 @@ function App() {
         </button> */}
       </div>
       <Home />
+      <Analytics/>
       <Skills />
       <DevOpsProjects />
       <DevOpsExperience />
       <Projects />
+      <ContactMe />
       <Footer />
+      
     </main>
   );
 }

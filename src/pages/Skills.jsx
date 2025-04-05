@@ -1,24 +1,21 @@
-
 import React from 'react';
-import { FaAws, FaGoogle, FaDocker, FaJenkins, FaPython, FaLinux, FaGitAlt, FaNodeJs } from 'react-icons/fa';
-import { SiTerraform, SiKubernetes, SiGrafana, SiPrometheus, SiGithubactions, SiGnubash, SiGitlab } from 'react-icons/si';
 
 const skills = [
-  { icon: <FaAws size={40} />, name: "AWS" },
-  { icon: <FaGoogle size={40} />, name: "GCP" },
-  { icon: <SiTerraform size={40} />, name: "Terraform" },
-  { icon: <FaDocker size={40} />, name: "Docker" },
-  { icon: <SiKubernetes size={40} />, name: "Kubernetes" },
-  { icon: <FaJenkins size={40} />, name: "Jenkins" },
-  { icon: <SiGithubactions size={40} />, name: "GitHub Actions" },
-  { icon: <SiGitlab size={40} />, name: "GitLab CI" },
-  { icon: <FaGitAlt size={40} />, name: "Git" },
-  { icon: <SiPrometheus size={40} />, name: "Prometheus" },
-  { icon: <SiGrafana size={40} />, name: "Grafana" },
-  { icon: <SiGnubash size={40} />, name: "Bash" },
-  { icon: <FaPython size={40} />, name: "Python" },
-  { icon: <FaLinux size={40} />, name: "Linux" },
-  { icon: <FaNodeJs size={40} />, name: "Node.js" },
+  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg', name: 'AWS' },
+  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg', name: 'Azure' },
+  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg', name: 'GCP' },
+  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg', name: 'Terraform' },
+  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg', name: 'Docker' },
+  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg', name: 'Kubernetes' },
+  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg', name: 'GitHub' },
+  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg', name: 'Bitbucket'},
+  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg', name: 'GitHub Actions'},
+  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg', name: 'Jenkins' },
+  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg', name: 'Prometheus' },
+  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg', name: 'Grafana' },
+  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-original.svg', name: 'Bash' },
+  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg', name: 'Python' },
+  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg', name: 'Linux' },
 ];
 
 export default function Skills() {
@@ -29,10 +26,17 @@ export default function Skills() {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center p-4 bg-gray-800 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105"
+            className="flex flex-col items-center w-28 h-28 justify-center p-4 bg-gray-800 rounded-lg shadow hover:shadow-lg transition transform hover:scale-105"
           >
-            {skill.icon}
-            <p className="mt-2 text-sm font-semibold">{skill.name}</p>
+            <div className="w-12 h-12 bg-white rounded-full flex items-center justify-center shadow">
+              <img
+                src={skill.icon}
+                alt={skill.name}
+                className="w-8 h-8 object-contain"
+                loading="lazy"
+              />
+            </div>
+            <p className="mt-2 text-xs text-center">{skill.name}</p>
           </div>
         ))}
       </div>
