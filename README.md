@@ -1,4 +1,3 @@
-
 # 🌐 Swaraj Dhondge — DevOps & Cloud Portfolio
 
 Welcome to my personal portfolio website, built with **React + Vite + Tailwind CSS**, focused on showcasing my skills and real-world DevOps & Cloud Engineering projects.
@@ -58,8 +57,7 @@ Welcome to my personal portfolio website, built with **React + Vite + Tailwind C
 git clone <repo_link>
 cd swaraj-portfolio
 npm install
-npm install react-icons aos react-simple-typewriter @vitejs/plugin-react
-npm run dev
+npm run dev / npm run build
 ```
 
 ---

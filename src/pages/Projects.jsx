@@ -1,4 +1,5 @@
-import React, { useState } from 'react';
+import React, { useState, useMemo } from 'react';
+import SectionTitle from '../components/SectionTitle'; 
 
 const projects = [
   {
@@ -50,18 +51,21 @@ const projects = [
 
 const categories = ["All", "DevOps", "Frontend", "Backend", "AI", "Game Dev"];
 
-export default function Projects() {
+const Projects = React.memo(() => {
   const [activeCategory, setActiveCategory] = useState("All");
 
-  const filteredProjects =
-    activeCategory === "All"
+  const filteredProjects = useMemo(() => {
+    return activeCategory === "All"
       ? projects
       : projects.filter((p) => p.category === activeCategory);
+  }, [activeCategory]);
 
   return (
     <section className="p-6 bg-gradient-to-br from-black via-gray-900 to-blue-900 text-white">
-      <h2 className="text-3xl font-bold text-center mb-8">Projects Gallery</h2>
-
+      <SectionTitle
+  title="Projects Gallery"
+  subtitle="A mix of DevOps, frontend, backend, and AI projects I've built"
+/>
       <div className="flex justify-center flex-wrap gap-3 mb-6">
         {categories.map((cat) => (
           <button
@@ -85,20 +89,22 @@ export default function Projects() {
           return (
             <div
               key={index}
-              className="p-5 rounded-2xl bg-gray-800/90 backdrop-blur shadow-xl hover:shadow-2xl transition transform hover:-translate-y-1"
+              className="p-5 rounded-2xl bg-gray-800/90 shadow-xl hover:shadow-2xl transition-transform transform hover:-translate-y-1"
             >
               {project.image && (
                 <img
                   src={project.image}
                   alt={project.title}
                   loading="lazy"
+                  width="600"
+                  height={isTopRow ? 200 : 140}
                   className={`rounded-xl mb-4 w-full object-cover ${
                     isTopRow ? 'h-48' : 'h-32'
                   }`}
                 />
               )}
               <h3 className={`font-semibold mb-1 ${isTopRow ? 'text-xl' : 'text-lg'}`}>{project.title}</h3>
-              <p className={`mb-3 text-sm text-gray-300`}>{project.description}</p>
+              <p className="mb-3 text-sm text-gray-300">{project.description}</p>
               <div className="flex flex-wrap gap-2 mb-4 text-xs">
                 {project.tech.map((tag, idx) => (
                   <span
@@ -112,6 +118,7 @@ export default function Projects() {
               <a
                 href={project.link}
                 target="_blank"
+                rel="noopener noreferrer"
                 className="text-blue-400 hover:text-white text-sm font-semibold"
               >
                 GitHub →
@@ -122,4 +129,6 @@ export default function Projects() {
       </div>
     </section>
   );
-}
+});
+
+export default Projects;
