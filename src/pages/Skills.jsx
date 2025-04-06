@@ -1,7 +1,7 @@
 import React from 'react';
 
 const skills = [
-  { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg', name: 'AWS' },
+  { icon: 'https://raw.githubusercontent.com/devicons/devicon/v2.16.0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg', name: 'AWS' },
   { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg', name: 'Azure' },
   { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg', name: 'GCP' },
   { icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg', name: 'Terraform' },
