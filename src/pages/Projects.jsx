@@ -7,7 +7,7 @@ const projects = [
     tech: ["Node.js", "Express", "MongoDB", "Docker"],
     category: "DevOps",
     link: "https://github.com/swarajdhondge/custom-skin-trade",
-    image: "/images/logo-black.png"
+    image: "/images/skintraders.png"
   },
   {
     title: "Skybound Odyssey",
