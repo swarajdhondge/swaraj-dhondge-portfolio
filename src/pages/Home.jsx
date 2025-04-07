@@ -7,9 +7,8 @@ export default function Home() {
     <section
       id="home"
       data-aos="fade-up"
-      className="relative flex items-center justify-center min-h-screen px-6 bg-gradient-to-br from-gray-900 via-blue-900 to-black text-white"
-    >
-      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      className="relative flex items-center justify-center min-h-screen px-6 bg-gradient-to-br from-gray-900 via-blue-900 to-black text-white">
+      <div className="max-w-6xl w-full grid grid-cols-1 md:grid-cols-2 gap-10 items-center pb-24">
         <div className="flex flex-col items-center justify-center text-center space-y-4">
           <img
             src="/profile.jpg"
@@ -77,13 +76,16 @@ export default function Home() {
         </div>
       </div>
 
-      <button
-        onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
-        className="absolute bottom-6 animate-bounce text-blue-300 hover:text-white transition flex flex-col items-center"
-      >
-        <ChevronsDown size={32} />
-        <span className="text-xs mt-1">Scroll Down</span>
-      </button>
+      <div className="absolute bottom-4 w-full flex justify-center z-40">
+        <button
+          onClick={() => document.getElementById('skills')?.scrollIntoView({ behavior: 'smooth' })}
+          className="animate-bounce text-blue-300 hover:text-white transition-all text-center">
+          <div className="flex flex-col items-center">
+            <ChevronsDown size={28} className="sm:w-8 sm:h-8 w-6 h-6" />
+            <span className="text-[10px] sm:text-xs mt-1">Scroll Down</span>
+          </div>
+        </button>
+      </div>
     </section>
   );
 }
