@@ -55,7 +55,7 @@ Welcome to my personal portfolio website, built with **React + Vite + Tailwind C
 
 ```bash
 git clone <repo_link>
-cd swaraj-portfolio
+cd <dir>
 npm install
 npm run dev / npm run build
 ```
