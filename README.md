@@ -1,6 +1,6 @@
-# 🌐 Swaraj Dhondge — DevOps & Cloud Portfolio
+# 🌐 Swaraj Dhondge — Cloud/DevOps Portfolio
 
-Welcome to my personal portfolio website, built with **React + Vite + Tailwind CSS**, focused on showcasing my skills and real-world DevOps & Cloud Engineering projects.
+Welcome to my personal portfolio website, built with **React + Vite + Tailwind CSS**, showcasing my journey from ML Engineer to Cloud Architect.
 
 ## 🔥 Live Site
 
@@ -12,60 +12,59 @@ Welcome to my personal portfolio website, built with **React + Vite + Tailwind C
 
 - **React** with Vite (fast bundler)
 - **Tailwind CSS** for modern UI
-- **AOS** for scroll animations
-- **react-simple-typewriter** for typing intro
-- **Dark Mode Toggle** (built-in)
+- **Framer Motion** for smooth animations
+- **Lucide React** for icons
+- **react-simple-typewriter** for typing effect
+- **Dark/Light Mode Toggle** with localStorage persistence
 - **Fully Responsive Design**
 
 ---
 
-## 🧠 Sections Included
+## 🎨 Features
 
-### 1. 🏠 Hero (Home)
+### 🏠 Hero Section
+- Dynamic typewriter effect showcasing expertise areas
+- Career journey animation: ML Engineer → DevOps Engineer → Cloud Architect
+- Social links (GitHub, LinkedIn, Email)
+- Glassmorphism design with neon accents
 
-- Dynamic typing intro
-- Gradient background
-- GitHub + LinkedIn links only
+### ⚙️ Skills Dock
+- Interactive floating dock with tech stack icons
+- Hover effects with glow animations
+- Categories: Cloud, DevOps, Languages, Frameworks
 
-### 2. ⚙️ DevOps Skills
+### 💼 Experience Timeline
+- Visual deployment log of professional journey
+- Animated timeline with metrics
+- Glass panel cards with hover effects
 
-- Icons for AWS, GCP, Docker, Kubernetes, Jenkins, etc.
+### 🚀 Projects
+- Grid layout with project cards
+- Live project images
+- GitHub links and deployment commands
+- Tech tags for each project
 
-### 3. 💻 Projects
-
-- Filterable cards by tech domain: DevOps, Frontend, AI, etc.
-- GitHub links to source code
-
-### 4. 🔧 DevOps Projects
-
-- Highlights real-world deployments & CI/CD pipelines
-- Compact card layout with 2–3 bullet points each
-
-### 5. 📈 DevOps Experience
-
-- Accordion-style layout for: Infrastructure, CI/CD, Monitoring
-
-### 6. 📫 Contact
-
-- Footer link: “Contact me on LinkedIn”
+### 🖥️ CLI Overlay (Easter Egg)
+- Press `Cmd/Ctrl + K` to open terminal interface
+- Interactive commands: `about`, `projects`, `skills`, `contact`
+- Authentic terminal styling
 
 ---
 
 ## 📦 Run Locally
 
 ```bash
-git clone <repo_link>
-cd <dir>
+git clone <repository-url>
+cd swaraj-dhondge-portfolio
 npm install
-npm run dev / npm run build
+npm run dev
 ```
 
----
-
-## 🧾 License
-
-This project is licensed for educational and personal use.
-Feel free to fork and customize for your own DevOps or developer portfolio.
+Build for production:
+```bash
+npm run build
+npm run preview
+```
 
 ---
 

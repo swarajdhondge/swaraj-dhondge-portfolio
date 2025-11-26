@@ -1,0 +1,289 @@
+{
+    "profile": {
+        "name": "Swaraj Dhondge",
+        "title": "DevOps & Cloud Engineer",
+        "location": "Seattle, WA",
+        "status": "Operational",
+        "bio": "Cloud/DevOps Engineer experienced in building reliable, automated platforms across AWS, Azure, and GCP. Skilled in Terraform, GitHub Actions, and AWS AppConfig with Kubernetes/ECS and serverless.",
+        "socials": {
+            "github": "https://github.com/swarajdhondge",
+            "linkedin": "https://linkedin.com/in/swarajd",
+            "email": "tosdhondge@gmail.com"
+        }
+    },
+    "skills": [
+        {
+            "name": "AWS",
+            "icon": "https://raw.githubusercontent.com/devicons/devicon/v2.16.0/icons/amazonwebservices/amazonwebservices-original-wordmark.svg"
+        },
+        {
+            "name": "Azure",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/azure/azure-original.svg"
+        },
+        {
+            "name": "GCP",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/googlecloud/googlecloud-original.svg"
+        },
+        {
+            "name": "Terraform",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/terraform/terraform-original.svg"
+        },
+        {
+            "name": "Docker",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg"
+        },
+        {
+            "name": "Kubernetes",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg"
+        },
+        {
+            "name": "Git",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain.svg"
+        },
+        {
+            "name": "Bitbucket",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bitbucket/bitbucket-original.svg"
+        },
+        {
+            "name": "GitHub Actions",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/githubactions/githubactions-original.svg"
+        },
+        {
+            "name": "Jenkins",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg"
+        },
+        {
+            "name": "Prometheus",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/prometheus/prometheus-original.svg"
+        },
+        {
+            "name": "Grafana",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/grafana/grafana-original.svg"
+        },
+        {
+            "name": "Bash",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-plain.svg"
+        },
+        {
+            "name": "Python",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg"
+        },
+        {
+            "name": "Linux",
+            "icon": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linux/linux-original.svg"
+        }
+    ],
+    "expertise": [
+        {
+            "title": "Cloud Infrastructure & Security",
+            "points": [
+                "Designed 3-tier AWS architecture with EC2, RDS, and Load Balancers",
+                "Configured VPCs, security groups, IAM, and CloudTrail for security",
+                "Reduced security incidents by 20% through AWS best practices"
+            ]
+        },
+        {
+            "title": "CI/CD & Automation",
+            "points": [
+                "Built CI/CD pipelines using Jenkins, GitLab, and GitHub Actions",
+                "Reduced deployment time by 40% and build time by 30%",
+                "Scripted automation with Bash & Python for over 200 workflows"
+            ]
+        },
+        {
+            "title": "Kubernetes & Monitoring",
+            "points": [
+                "Managed EKS & GKE clusters for scalable deployments",
+                "Deployed monitoring with Prometheus, Grafana, ELK",
+                "Proactively managed container health and performance"
+            ]
+        }
+    ],
+    "experience": [
+        {
+            "id": "work-akt",
+            "title": "Cloud Engineer",
+            "company": "Advanced Knowledge Tech",
+            "period": "Jan 2025 - Present",
+            "metrics": [
+                {
+                    "value": "60%",
+                    "label": "Release Time Cut",
+                    "detail": "via AppConfig & Step Functions"
+                },
+                {
+                    "value": "100%",
+                    "label": "Lambda Coverage",
+                    "detail": "Pytest & SonarQube Gates"
+                }
+            ],
+            "description": "Architected AWS AppConfig workflows using Lambda and Step Functions to automate configuration rollouts. Implemented WAF rules via Terraform to eliminate false positives on high-payload requests."
+        },
+        {
+            "id": "work-sai",
+            "title": "Cloud Engineer",
+            "company": "Subconcious AI",
+            "period": "Feg 2024 - Aug 2024",
+            "metrics": [
+                {
+                    "value": "30m → 2m",
+                    "label": "Build Optimization",
+                    "detail": "Docker Layer Caching"
+                },
+                {
+                    "value": "93%",
+                    "label": "Time Reduction",
+                    "detail": "Cloud Build Triggers"
+                }
+            ],
+            "description": "Automated GCP Cloud Run deployments using Cloud Build triggers. Migrated secrets to Doppler and optimized Dockerfiles to reduce build times by 93%."
+        },
+        {
+            "id": "work-amdocs",
+            "title": "DevOps Engineer",
+            "company": "Amdocs",
+            "period": "Sep 2020 - Aug 2022",
+            "metrics": [
+                {
+                    "value": "200+",
+                    "label": "Tasks Automated",
+                    "detail": "Bash/Python Scripts"
+                },
+                {
+                    "value": "90%",
+                    "label": "Toil Reduction",
+                    "detail": "Tivoli Maestro Integration"
+                }
+            ],
+            "description": "Automated 200+ legacy ops tasks using Bash/Python scripts integrated with Tivoli Maestro. Managed WebLogic hotfixes and OpenShift ELK stack."
+        }
+    ],
+    "projects": [
+        {
+            "id": "proj-farm-agent",
+            "title": "Farm Agent",
+            "description": "AI-powered agricultural management system for crop monitoring and yield prediction.",
+            "tags": [
+                "Google ADK",
+                "Python",
+                "AI"
+            ],
+            "category": "AI",
+            "link": "https://github.com/swarajdhondge/farm-agent",
+            "image": "/images/farmagent.png",
+            "deploymentCommand": "python train.py"
+        },
+        {
+            "id": "proj-custom-skin-trade",
+            "title": "Custom Skin Trade",
+            "description": "A full-stack trading platform with secure auth and Dockerized deployment.",
+            "tags": [
+                "Node.js",
+                "Express.js",
+                "MongoDB",
+                "Mongoose",
+                "Docker",
+                "Docker Compose"
+            ],
+            "category": "Full Stack",
+            "link": "https://github.com/swarajdhondge/custom-skin-trade",
+            "image": "/images/skintraders.png",
+            "deploymentCommand": "docker-compose up --build -d"
+        },
+        {
+            "id": "proj-skybound",
+            "title": "Skybound Odyssey",
+            "description": "2D Unity platformer featuring smooth gameplay and level design.",
+            "tags": [
+                "Unity",
+                "C#"
+            ],
+            "category": "Game Dev",
+            "link": "https://github.com/swarajdhondge/skybound-odyssey",
+            "image": "/images/skybound-odyssey.png",
+            "deploymentCommand": "./build_pipeline.sh"
+        },
+        {
+            "id": "proj-epl",
+            "title": "EPL Prototype",
+            "description": "HTML/CSS static site inspired by EPL homepage.",
+            "tags": [
+                "HTML",
+                "CSS"
+            ],
+            "category": "Frontend",
+            "link": "https://github.com/swarajdhondge/epl-prototype",
+            "image": "/images/epl-prototype.png",
+            "deploymentCommand": "vercel deploy"
+        },
+        {
+            "id": "proj-todo",
+            "title": "Dynamic To-Do List",
+            "description": "Reactive task manager using Vue.js for seamless UX.",
+            "tags": [
+                "Vue.js"
+            ],
+            "category": "Frontend",
+            "link": "https://github.com/swarajdhondge/dynamic-todolist",
+            "image": "/images/dynamic-todo.png",
+            "deploymentCommand": "npm run build"
+        },
+        {
+            "id": "proj-ejs",
+            "title": "EJS Express CRUD",
+            "description": "CRUD app using server-side rendering with EJS & Express.",
+            "tags": [
+                "EJS",
+                "Express.js"
+            ],
+            "category": "Backend",
+            "link": "https://github.com/swarajdhondge/ejs-express-framework-curd-operations",
+            "image": "/images/ejs-crud.png",
+            "deploymentCommand": "node server.js"
+        },
+        {
+            "id": "proj-emotion",
+            "title": "Speech Emotion Recognition",
+            "description": "Lightweight ML models for Speech Emotion Recognition using handcrafted audio characteristics.",
+            "tags": [
+                "Python",
+                "scikit-learn",
+                "Librosa",
+                "Django",
+                "Jupyter Labs"
+            ],
+            "category": "AI",
+            "link": "https://github.com/swarajdhondge/speech-emotion-recognition-models",
+            "image": "/images/speech-emotion.png",
+            "deploymentCommand": "jupyter notebook"
+        },
+        {
+            "id": "proj-cicd-opt",
+            "title": "CI/CD Optimization",
+            "description": "Kubernetes-based CI/CD with Jenkins & Nexus. Boosted deployment speed.",
+            "tags": [
+                "Jenkins",
+                "Kubernetes",
+                "Nexus"
+            ],
+            "category": "DevOps",
+            "link": "",
+            "image": "/images/cicd-opt.png",
+            "deploymentCommand": "kubectl apply -f pipeline.yaml"
+        },
+        {
+            "id": "proj-hybrid-ai",
+            "title": "Hybrid AI Deployment",
+            "description": "Deployed across EKS + GCP VMs. Cut deployment time by 80%.",
+            "tags": [
+                "EKS",
+                "GCP",
+                "Docker"
+            ],
+            "category": "DevOps",
+            "link": "",
+            "image": "/images/hybrid-ai.png",
+            "deploymentCommand": "terraform apply"
+        }
+    ]
+}
